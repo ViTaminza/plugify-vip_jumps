@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${VIP_JUMPS_VERSION}",
+	"name": "vip_jumps",
+	"description": "Extra jumps for VIPs: the 'jumps' feature of groups.ini is the total number of jumps per airtime (1 = none). A per-frame timer watches the IN_JUMP edge of every living VIP with the feature on and gives the extra jumps (vertical velocity 300), with the production build's fix for the tick where the engine has already launched but FL_ONGROUND is still set. A port of the Metamod:Source module 'VIP_Jumps' of the Pisex cs2-vip plugin.",
+	"author": "Pisex && ABKAM, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/vip_jumps",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "vip",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
