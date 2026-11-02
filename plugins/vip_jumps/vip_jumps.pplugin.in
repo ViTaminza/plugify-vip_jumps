@@ -16,12 +16,7 @@
 		},
 		{
 			"name": "vip",
-			"constraints": ">=1.0.0"
-		},
-		{
-			"name": "hudmenu",
-			"constraints": ">=1.0.0",
-			"optional": true
+			"constraints": ">=1.2.7"
 		}
 	],
 	"methods": []
